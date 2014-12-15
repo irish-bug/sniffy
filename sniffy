@@ -1,0 +1,91 @@
+#! /usr/bin/python
+# Sniffy is offered as extra credit 
+# by Shane Rogers
+# For CS 498 AL1 Digital Forensics 
+# December 14, 2014
+# SEE README FILE FOR MORE INFO
+
+#used to check pcap input
+import sys 
+
+#used to silence unnecessary warnings
+import logging
+logging.getLogger("scapy.runtime").setLevel(logging.ERROR) 
+
+#import scapy
+from scapy.all import *
+
+# Check to make sure user passed in a pcap file
+if len(sys.argv) != 2:
+	print("Usage: ./sniffy <pcap name> <output file>")
+	print "For more info try: ./sniffy --help"
+	exit()
+
+if sys.argv[1] == "--help":
+	print "############################################################"
+	print "                    WElCOME TO SNIFFY"
+	print "############################################################"
+	print "#                                                          #"
+	print "# Sniffy is a TCP packet sniffer and quite easy to use.    #"
+	print "# Just activate sniffy and pass it the pcap file you       #"
+	print "# would like to extract TCP packet information from        #"
+	print "# Like this:                                               #"
+	print "#                                                          #"
+	print "#               ./sniffy mypcap.pcap                       #"
+	print "#                                                          # "
+	print "# Sniffy will extract all information available from all   #"
+	print "# TCP packets inside of your pcap, including packet data   #"
+	print "# if available and will write all of the data into a file  #"
+	print "# named sniffy_output.txt in your current directory.       #"
+	print "#                                                          # "
+	print "############################################################"
+	print " Sniffy was written and is maintained by Shane Rogers using"
+	print " Python and the Scapy library 2014   shane@shanerogers.info   "
+	print "############################################################"
+	
+	exit()
+
+# Set pcap to the name of the file and open it
+# Print to screen that pcap is being opened	
+
+pcap = sys.argv[1]
+print " "
+print " Opening",
+print sys.argv[1]
+print " "
+pkts = rdpcap(pcap)
+
+# Read all packets from pcap file and filter out
+# only those having to do with TCP
+
+pkt_no = 0
+sys.stdout = open('sniffy_output.txt', 'w')
+
+
+for pkt in pkts:
+	if pkt.haslayer(TCP) == 1:
+		pkt_no += 1
+	## write summary and other info from packets to file
+		print"Packet # "
+		print pkt_no
+		print " "		
+		summary = str(pkt.summary())
+		print(summary)
+		print " "
+		show = str(pkt.show())
+		print(show)
+		print " "
+
+sys.stdout = sys.__stdout__
+if pkt_no > 0:
+	print " TCP Packet info written to sniffy_output.txt"
+	print " "
+if pkt_no == 0:
+	print " No TCP Traffic Found "
+	print " "
+		
+
+
+
+
+
