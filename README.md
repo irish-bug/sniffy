@@ -5,7 +5,7 @@ TCP packet sniffer
 
 ======
 
-    ############################################################ 
+        ############################################################ 
 	                    WElCOME TO SNIFFY 
 	############################################################ 
 	#                                                          # 
@@ -28,7 +28,17 @@ TCP packet sniffer
 
 
 	NOTE: Please make sure you have Python and Scapy installed 
-	before using Sniffy.  
+	before using Sniffy. If you see the following error:
+	Traceback (most recent call last):
+	 File "./sniffy", line 16, in <module>
+	 from scapy.all import *
+	 ImportError: No module named scapy.all
+	This means that you need to install Scapy. 
+	
+	Instructions for installing Scapy can be found here:
+	 
+         http://www.secdev.org/projects/scapy/doc/installation.html#debian-ubuntu
+  	 
 
 	Copyright 2014 Shane Rogers
 
@@ -61,11 +71,4 @@ TCP packet sniffer
 	"Wireshark Internet_Protocol" [online], 
 	http://wiki.wireshark.org/Internet_Protocol 
 	(Accessed 12 December 2014)
-
-
-
-	
-
-
-
 
