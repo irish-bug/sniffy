@@ -46,13 +46,20 @@ TCP packet sniffer
 	
 	Citations:
 	
-	"Apache License, Version 2.0," Open Source Initiative [online] http://opensource.org/licenses/Apache-2.0 (Accessed 14 December 2014)
+	"Apache License, Version 2.0," Open Source Initiative [online] 
+	http://opensource.org/licenses/Apache-2.0 (Accessed 14 December 2014)
 
-	"Get all IP layer packages from pcap file in Scapy", (asked Nov 20, '13 at 10:23) by reox on stackoverflow, http://stackoverflow.com/questions/20093238/get-all-ip-layer-packages-from-pcap-file-in-scapy (Accessed 13 December 2014)
+	"Get all IP layer packages from pcap file in Scapy", 
+	(asked Nov 20, '13 at 10:23) by reox on stackoverflow, 
+	http://stackoverflow.com/questions/20093238/get-all-ip-layer-
+	packages-from-pcap-file-in-scapy (Accessed 13 December 2014)
 	
-	"Scapy v2.1.1-dev documentation," [online],	http://www.secdev.org/projects/scapy/doc/index.html (Accessed 3 December 2014, 7 December 2014, and 14 December 2014)
+	"Scapy v2.1.1-dev documentation," [online],	
+	http://www.secdev.org/projects/scapy/doc/index.html 
+	(Accessed 3 December 2014, 7 December 2014, and 14 December 2014)
 
-	"Wireshark Internet_Protocol" [online], http://wiki.wireshark.org/Internet_Protocol 
+	"Wireshark Internet_Protocol" [online], 
+	http://wiki.wireshark.org/Internet_Protocol 
 	(Accessed 12 December 2014)
 
 
