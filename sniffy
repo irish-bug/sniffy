@@ -17,7 +17,7 @@ from scapy.all import *
 
 # Check to make sure user passed in a pcap file
 if len(sys.argv) != 2:
-	print("Usage: ./sniffy <pcap name> <output file>")
+	print("Usage: ./sniffy <pcap name>")
 	print "For more info try: ./sniffy --help"
 	exit()
 
