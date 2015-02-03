@@ -1,7 +1,7 @@
 sniffy
 ======
 
-TCP packet sniffer
+TCP pcap parser
 
 ======
 
