@@ -1,8 +1,8 @@
 #! /usr/bin/python
-# Sniffy is offered as extra credit 
+# Sniffy is the final project 
 # by Shane Rogers
-# For CS 498 AL1 Digital Forensics 
-# December 14, 2014
+# For CS 498 Digital Forensics 2 
+# April 26, 2017
 # SEE README FILE FOR MORE INFO
 
 #used to check pcap input
