@@ -40,7 +40,7 @@ TCP pcap parser
      	http://www.secdev.org/projects/scapy/doc/installation.html#debian-ubuntu
 
 
-	Copyright 2014 Shane Rogers
+	Copyright 2017 Shane Rogers
 
    	Licensed under the Apache License, Version 2.0 (the "License");
    	you may not use this file except in compliance with the License.
@@ -57,7 +57,7 @@ TCP pcap parser
 	Citations:
 	
 	"Apache License, Version 2.0," Open Source Initiative [online] 
-	http://opensource.org/licenses/Apache-2.0 (Accessed 14 December 2014)
+	http://opensource.org/licenses/Apache-2.0 (Accessed 14 December 2017)
 
 	"Get all IP layer packages from pcap file in Scapy", 
 	(asked Nov 20, '13 at 10:23) by reox on stackoverflow, 
@@ -66,11 +66,11 @@ TCP pcap parser
 	
 	"Scapy v2.1.1-dev documentation," [online],	
 	http://www.secdev.org/projects/scapy/doc/index.html 
-	(Accessed 3 December 2014, 7 December 2014, and 14 December 2014)
+	(Accessed 3 April 2017, 7 April 2017, and 14 April 2017)
 
 	"Wireshark Internet_Protocol" [online], 
 	http://wiki.wireshark.org/Internet_Protocol 
-	(Accessed 12 December 2014)
+	(Accessed 12 April 2017)
 
 
 
